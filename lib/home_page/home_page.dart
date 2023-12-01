@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:smarthq/home_page/measure_size.dart';
 import 'package:smarthq/home_page/widgets/chart.dart';
 import 'package:smarthq/home_page/widgets/duration_dropdown.dart';
+import 'package:smarthq/home_page/widgets/financial_report_chart.dart';
 import 'package:smarthq/home_page/widgets/item_lists.dart';
 import 'package:smarthq/home_page/widgets/property_dropdown.dart';
 import 'package:smarthq/responsive.dart';
@@ -241,9 +242,7 @@ class _HomePageState extends State<HomePage> {
           const Divider(
             color: Color(0xFFF1F1F1),
           ),
-          const SizedBox(
-            height: 200,
-          ),
+          Container(height: 250, width: double.infinity, child: MyHomePage())
         ],
       ),
     );
